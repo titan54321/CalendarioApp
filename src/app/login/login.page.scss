@@ -1,0 +1,68 @@
+/* General styles */
+.login-container {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  display: none; /* Remove heading for minimalism */
+}
+
+/* Image styles */
+img {
+  max-width: 200px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+/* Card styles */
+ion-card {
+  background-color: #f8f9fa; /* Light gray background, adjust for preference */
+  border: none; /* Remove default card border */
+  padding: 20px;
+  box-shadow: none; /* Remove default shadow */
+}
+
+ion-item {
+  margin-bottom: 15px;
+  border: none; /* Remove default item border */
+  padding: 10px;
+}
+
+ion-label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+ion-input {
+  border: 1px solid #ddd; /* Subtle border */
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+/* Button styles */
+ion-button[color="primary"] {
+  background-color: #2196F3; /* Primary blue color, adjust if needed */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px; /* Adjust font size for consistency */
+  margin-top: 20px; /* Add spacing after elements */
+}
+
+ion-button[color="primary"]:hover {
+  background-color: #1976D2; /* Darker blue on hover */
+}
+
+/* Link styles */
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: #2196F3; /* Primary blue color */
+  text-decoration: none;
+}

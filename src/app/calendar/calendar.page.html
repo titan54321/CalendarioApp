@@ -1,0 +1,104 @@
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+
+<ion-header>
+  <ion-toolbar position="bottom">
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToProfile()">
+        <img src="../assets/img/profile.png">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToCalendar()">
+        <img src="../assets/img/calendar.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToHome()">
+        <img src="../assets/img/home.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToDepartments()">
+        <img src="../assets/img/not.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Select Date</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+  <ion-datetime  (ionChange)="onDateChange($event)" [highlightedDates]="highlightedDate" [highlightedDates]="highlightedDates1" presentation="date">
+   
+</ion-datetime>
+</ion-card-content>
+</ion-card>
+
+
+  <button id="eventsButton" class="boton" (click)="NavigateToEvents()">Go to Events Page</button>
+
+
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Actividades Escolares</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    <ion-datetime [highlightedDates]="highlightedDates1" presentation="date">
+     
+  </ion-datetime>
+  </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <span class="titulo">Actividades</span>
+       </ion-item>
+    <ion-item>
+      <span>Reinscripciones</span>
+      <span class="circle1"></span>
+    </ion-item>
+    <ion-item>
+      <span>Fin de clases</span>
+      <span class="circle2"></span>
+    </ion-item>
+    <ion-item>
+      <span>Cursos de verano</span>
+      <span class="circle3"></span>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <span>Suspension, dia inhabil</span>
+    <span class="circle4"></span>
+  </ion-item>
+  <ion-item>
+    <span>Vacaciones</span>
+    <span class="circle5"></span>
+  </ion-item>
+  <br>
+  <br>
+ 
+  <button id="eventsButton" class="boton" (click)="addEvents()">Agrega eventos</button>
+      
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<script>
+</script>
+</ion-content>

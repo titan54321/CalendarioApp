@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Todos los eventos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="menu">
+  <ion-toolbar position="bottom">
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToProfile()">
+        <img src="../assets/img/profile.png">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToCalendar()">
+        <img src="../assets/img/calendar.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToHome()">
+        <img src="../assets/img/home.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToDepartments()">
+        <img src="../assets/img/not.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchEvents()"></ion-searchbar>
+   -->
+
+<ion-card>
+  <ion-list>
+   @for(user of events; track $index){
+  <ion-item>
+  <ion-label>
+
+<h3>{{user.title}}</h3>
+ <p>{{user.date}}</p>
+
+</ion-label>
+  </ion-item>
+}
+  </ion-list>
+</ion-card>
+
+</ion-content>
+
+<style>/* Header Styles */
+
+  ion-card {
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px; /* Relleno interno */
+  }
+  ion-header ion-toolbar {
+    --background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-header ion-title {
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* List Item Styles */
+  ion-list ion-item {
+    --background: #ffffff;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 16px;
+  }
+
+  ion-list ion-item ion-label h3 {
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: rgb(20, 20, 137);
+  }
+
+  ion-list ion-item ion-label p {
+    color: #666;
+  }
+  </style>

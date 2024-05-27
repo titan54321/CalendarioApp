@@ -1,0 +1,36 @@
+.menu {
+  --background: #ffffff; // Fondo blanco para el ion-toolbar
+  // --border-color: transparent;
+    height: 60px; // Altura más pequeña para el ion-toolbar
+    align-items: center;
+    width: 100%; // Ancho completo del ion-toolbar
+    position: fixed; // Fijar el ion-toolbar en su lugar
+    bottom: 0; // Alinear en la parte inferior de la pantalla
+    z-index: 9999; // Asegurarse de que esté encima de otros elementos
+    }
+
+    ion-button {
+      --background: transparent; // Fondo transparente para los botones
+      --color: #000000; // Color del texto negro para los botones
+      --padding-start: 30px; // Ajuste de relleno izquierdo para los botones
+      --padding-end: 30px; // Ajuste de relleno derecho para los botones
+      margin-top: 10px;
+    }
+
+    ion-icon {
+      color: #000000; // Color de los iconos negro
+    }
+
+    .head {
+      background-color: #c09cf3; /* Color de fondo */
+     color: #000; /* Color del texto */
+     padding: 15px; /* Espaciado interno */
+   font-family: 'SF Pro Text', Arial, sans-serif;
+
+    .h1{
+      font-weight: bold;
+    }
+    .ion-item{
+      border-radius: 20px;
+    }
+    }

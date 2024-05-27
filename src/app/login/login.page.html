@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link href="https://unpkg.com/ionic@5.7.0/core/dist/ionic.css" rel="stylesheet">
+
+</head>
+<body>
+  <ion-app>
+
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Login</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div class="login-container">
+      <h2>Iniciar sesión</h2>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/TecNM_logo.png" alt="">
+
+      <ion-card color="light">
+        <ion-item>
+          <ion-label labelPlacement="floating" value="email" >Correo electrónico</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label labelPlacement="floating" value="password">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div class="button-container">
+        <ion-button expand="block" color="primary" (click)="login()" [disabled]="cargando">
+          <ion-spinner *ngIf="cargando" slot="start"></ion-spinner>
+          <span *ngIf="!cargando">Iniciar sesión</span>
+        </ion-button>
+      </div>
+
+      <div class="register-link">
+        ¿No tienes una cuenta? <a href="/register">Regístrate</a>
+        <br>
+        Olvidaste tu contrasena <a href="/forgot">forgot-password</a>
+      </div>
+    </div>
+
+  </ion-app>
+
+  <script src="https://unpkg.com/ionic@5.7.0/core/dist/ionic.js"></script>
+
+</body>
+</html>

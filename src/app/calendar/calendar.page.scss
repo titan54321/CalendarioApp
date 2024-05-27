@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;700&display=swap');
+
+// ion-item {
+//   margin-top: 5px;
+// }
+
+// ion-card {
+//     width: 120px; /* Ancho del ion-card */
+//     height: 150px; /* Alto del ion-card */
+//     margin: 5px; /* Margen entre los ion-card */
+//     margin-top: 50px;
+// margin-left: 10px;
+// text-align: center;
+
+//   }
+
+//   ion-card ion-card-content {
+//     padding: 5px; /* Espaciado interno del contenido del ion-card */
+//   }
+
+//   ion-card img {
+//     max-width: 80px; /* Tamaño máximo de la imagen */
+//     max-height: 60px; /* Altura máxima de la imagen */
+//     text-align: center;
+//   }
+
+//   ion-card ion-card-title {
+//     font-size: 10px; /* Tamaño del texto del título */
+//   }
+
+//   ion-card ion-card-subtitle,
+//   ion-card ion-card-content p {
+//     font-size: 8px; /* Tamaño del texto del contenido */
+//   }
+
+
+  .event-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 10px;
+  }
+
+  ion-toolbar {
+    --background: #ffffff; // Fondo blanco para el ion-toolbar
+    // --border-color: transparent;
+      height: 60px; // Altura más pequeña para el ion-toolbar
+      align-items: center;
+      width: 100%; // Ancho completo del ion-toolbar
+      position: fixed; // Fijar el ion-toolbar en su lugar
+      bottom: 0; // Alinear en la parte inferior de la pantalla
+      z-index: 9999; // Asegurarse de que esté encima de otros elementos
+      }
+
+      ion-button {
+        --background: transparent; // Fondo transparente para los botones
+        --color: #000000; // Color del texto negro para los botones
+        --padding-start: 30px; // Ajuste de relleno izquierdo para los botones
+        --padding-end: 30px; // Ajuste de relleno derecho para los botones
+        margin-top: 10px;
+      }
+
+      ion-icon {
+        color: #000000; // Color de los iconos negro
+      }
+
+      .head {
+        background-color: #c09cf3; /* Color de fondo */
+       color: #000; /* Color del texto */
+       padding: 15px; /* Espaciado interno */
+     font-family: 'SF Pro Text', Arial, sans-serif;
+
+      .h1{
+        font-weight: bold;
+      }
+      .ion-item{
+        border-radius: 20px;
+      }
+      }
+
+
+.ion-datetime span.slot {
+  display: none;
+}
+
+ion-datetime {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+ion-button {
+  margin-top: 20px;
+}
+
+.boton{
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Apple blue color */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 95px;
+}
+/* Style the circle element */
+.circle1 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing as needed */
+  background-color: #13774d; /* Default color */
+}
+
+/* Add different colors for each circle (optional) */
+.circle2 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing as needed */
+  background-color: #da451c; /* Blue for "Actividades" */
+}
+
+.circle3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing as needed */
+  background-color: #eb9710; /* Green for "Reinscripciones" */
+}
+
+/* Repeat for other items */
+.circle4 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing as needed */
+  background-color: #c7c7c7; /* Red for "Fin de clases" */
+}
+
+.circle5 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing as needed */
+  background-color: #010101; /* Red for "Fin de clases" */
+}
+
+

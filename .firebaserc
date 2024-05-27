@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "back-app-12759": {
+      "hosting": {
+        "app": [
+          "back-app-12759"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "back-app-12759"
+  }
+}

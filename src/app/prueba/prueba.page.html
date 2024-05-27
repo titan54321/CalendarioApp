@@ -1,0 +1,32 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>prueba</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Select Date</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-datetime (ionChange)="onDateSelected($event)" [highlightedDates]="highlightedDates" [(ngModel)]="selectedDate" pickerFormat="YYYY-MM-DD">
+        <ion-item *ngFor="let day of daysInMonth">
+          <ion-checkbox [disabled]="!isWeekday(day)" (click)="handleDayClick(day)"></ion-checkbox>
+          <ion-label>{{ day.getDate() }}</ion-label>
+        </ion-item>
+      </ion-datetime>
+      <ion-list *ngIf="events && events.length > 0">
+        <ion-list-header>Eventos para {{ selectedDate | date:'mediumDate' }}</ion-list-header>
+        <ion-item *ngFor="let event of events">
+          {{ event }}
+        </ion-item>
+      </ion-list>
+      <ion-list *ngIf="events && events.length === 0">
+        <ion-list-header>No hay eventos para {{ selectedDate | date:'mediumDate' }}</ion-list-header>
+      </ion-list>
+      <p *ngIf="selectedHighlightedDay?.title">Highlighted Day Title: {{ selectedHighlightedDay.title }}</p>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content> -->

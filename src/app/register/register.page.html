@@ -1,0 +1,96 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<h2>  Ingresa los siguientes datos:</h2>
+<ion-card>
+  <ion-label>
+    Email:
+  </ion-label>
+  <ion-input type="text" [(ngModel)]="newUser.email">
+
+  </ion-input>
+</ion-card>
+
+  <ion-card>
+    <ion-label>
+      No. Control:
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="newUser.controlNumber">
+
+    </ion-input>
+  </ion-card>
+
+  <ion-card>
+      <ion-label>
+        Password:
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="newUser.password">
+
+      </ion-input>
+  </ion-card>
+
+      <div style="margin: 20px">
+        <ion-button (click)="save()">Registrarse</ion-button>
+      </div>
+      <p>¿Ya tienes una cuenta? <a href="/login">Inicia sesión</a></p>
+      @if (cargando) {
+        <div>
+          <ion-spinner name="bubbles"></ion-spinner>
+        </div>
+      }
+     
+</ion-content>
+
+<style>/* Header Styles */
+
+  ion-card {
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px; /* Relleno interno */
+  }
+  ion-header ion-toolbar {
+    --background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-header ion-title {
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* List Item Styles */
+  ion-list ion-item {
+    --background: #ffffff;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 16px;
+  }
+
+  ion-list ion-item ion-label h3 {
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: rgb(20, 20, 137);
+  }
+
+  ion-list ion-item ion-label p {
+    color: #666;
+  }
+
+  ion-button {
+    margin-left: 95px;
+  }
+
+  p {
+    margin-left: 55px;
+  }
+
+  h2{
+    margin-left: 20px;
+  }
+  </style>

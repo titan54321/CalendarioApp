@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar position="bottom">
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToProfile()">
+        <img src="../assets/img/profile.png">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToCalendar()">
+        <img src="../assets/img/calendar.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToHome()">
+        <img src="../assets/img/home.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="navigateToDepartments()">
+        <img src="../assets/img/not.png" alt="">
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="head" border-radius="15px">
+  <a routerLink="/login">
+    <ion-icon name="person-circle-outline" class="profile-icon">Register</ion-icon>
+  </a>
+  <h1>Agenda Escolar</h1> <a href="login">LogIn</a>
+  <ion-item>
+    <h3>Tecnologico de La Piedad</h3>
+  </ion-item>
+    </ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="event-button">
+    <ion-item lines="none">
+      <ion-label>Calendario</ion-label>
+      <ion-button slot="end" fill="clear" routerLink="/departments">
+        Ver Todos
+      </ion-button>
+    </ion-item>
+  </div>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size-sm="6" size-md="3">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Enero</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://i.pinimg.com/564x/be/2f/0b/be2f0b902dd57aa8ef884f3ba8d2f3ef.jpg" alt="Imagen 1">
+        <p>Inicio de clases</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+
+  <ion-col size-sm="6" size-md="3">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Febrero</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://i.pinimg.com/474x/a0/04/c3/a004c31227e6163d3f0b4f51a89f6900.jpg" alt="Imagen 2">
+        <p>Primeros examenes</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+<br>
+<br>
+  <div class="event-button">
+    <ion-item lines="none">
+      <ion-label>Eventos</ion-label>
+      <ion-button slot="end" fill="clear" routerLink="/departments">
+        Ver Todos
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <!-- Contenedor para los ion-card con desplazamiento horizontal -->
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size-sm="6" size-md="3">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Marzo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://i.pinimg.com/564x/be/2f/0b/be2f0b902dd57aa8ef884f3ba8d2f3ef.jpg" alt="Imagen 1">
+        <p>Inicio de clases</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+
+  <ion-col size-sm="6" size-md="3">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Abril</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://i.pinimg.com/474x/a0/04/c3/a004c31227e6163d3f0b4f51a89f6900.jpg" alt="Imagen 2">
+        <p>Primeros examenes</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content> 

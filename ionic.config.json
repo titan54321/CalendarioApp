@@ -1,0 +1,8 @@
+{
+  "name": "Back-App",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
